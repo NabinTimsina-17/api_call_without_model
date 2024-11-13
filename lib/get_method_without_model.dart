@@ -54,19 +54,19 @@ class _GetMethodWithoutModelState extends State<GetMethodWithoutModel> {
                       padding: const EdgeInsets.all(12.0),
                       child: Column(
                         children: [
-                              userInfo(index, "Name : ",
+                          userInfo(index, "Name : ",
                               postModelData[index]['name'].toString()),
-                              userInfo(index, "Email : ",
+                          userInfo(index, "Email : ",
                               postModelData[index]['email'].toString()),
-                              userInfo(index, "Street : ",
+                          userInfo(index, "Street : ",
                               postModelData[index]['street'].toString()),
-                              userInfo(index, "City : ",
+                          userInfo(index, "City : ",
                               postModelData[index]['city'].toString()),
-                              userInfo(index, "Zipcode : ",
+                          userInfo(index, "Zipcode : ",
                               postModelData[index]['zipcode'].toString()),
-                              userInfo(index, "Phone : ",
+                          userInfo(index, "Phone : ",
                               postModelData[index]['phone'].toString()),
-                              userInfo(index, "Website : ",
+                          userInfo(index, "Website : ",
                               postModelData[index]['website'].toString()),
                         ],
                       ),
@@ -76,9 +76,9 @@ class _GetMethodWithoutModelState extends State<GetMethodWithoutModel> {
               }),
     );
   }
-
-  Row userInfo(int index, name, value) {
-    return Row(children: [
+  
+    Row userInfo(int index, name, value) {
+    return Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
       Text(
         name,
         style: const TextStyle(
