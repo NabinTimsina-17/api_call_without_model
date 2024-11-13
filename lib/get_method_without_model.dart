@@ -47,23 +47,30 @@ class _GetMethodWithoutModelState extends State<GetMethodWithoutModel> {
               itemBuilder: (context, index) {
                 return Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Column(
-                    children: [
-                          userInfo(index, "Name : ",
-                          postModelData[index]['name'].toString()),
-                          userInfo(index, "Email : ",
-                          postModelData[index]['email'].toString()),
-                          userInfo(index, "Street : ",
-                          postModelData[index]['street'].toString()),
-                          userInfo(index, "City : ",
-                          postModelData[index]['city'].toString()),
-                          userInfo(index, "Zipcode : ",
-                          postModelData[index]['zipcode'].toString()),
-                          userInfo(index, "Phone : ",
-                          postModelData[index]['phone'].toString()),
-                          userInfo(index, "Website : ",
-                          postModelData[index]['website'].toString()),
-                    ],
+                  child: Material(
+                    elevation: 2,
+                    borderRadius: BorderRadius.circular(10),
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        children: [
+                              userInfo(index, "Name : ",
+                              postModelData[index]['name'].toString()),
+                              userInfo(index, "Email : ",
+                              postModelData[index]['email'].toString()),
+                              userInfo(index, "Street : ",
+                              postModelData[index]['street'].toString()),
+                              userInfo(index, "City : ",
+                              postModelData[index]['city'].toString()),
+                              userInfo(index, "Zipcode : ",
+                              postModelData[index]['zipcode'].toString()),
+                              userInfo(index, "Phone : ",
+                              postModelData[index]['phone'].toString()),
+                              userInfo(index, "Website : ",
+                              postModelData[index]['website'].toString()),
+                        ],
+                      ),
+                    ),
                   ),
                 );
               }),
